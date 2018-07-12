@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B116D58C20EF1D22003B6C0E /* PlayerAI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B116D58B20EF1D22003B6C0E /* PlayerAI.cpp */; };
+		B12CD44320F59F84007E8CCA /* UIGameOver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B12CD44120F59F84007E8CCA /* UIGameOver.cpp */; };
+		B13BE55B20F453BA0058808E /* UITitleScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE55920F453BA0058808E /* UITitleScreen.cpp */; };
+		B13BE55F20F454300058808E /* UIButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE55D20F454300058808E /* UIButton.cpp */; };
+		B13BE56220F456150058808E /* TouchEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE56020F456150058808E /* TouchEvent.cpp */; };
+		B13BE56520F458040058808E /* UIComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE56320F458040058808E /* UIComponent.cpp */; };
+		B13BE56920F46BDA0058808E /* UIManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE56720F46BDA0058808E /* UIManager.cpp */; };
+		B13BE56C20F46C720058808E /* UIView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE56A20F46C720058808E /* UIView.cpp */; };
+		B13BE57120F4784E0058808E /* UIBaseView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE56F20F4784E0058808E /* UIBaseView.cpp */; };
+		B13BE57420F4876C0058808E /* UILabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE57220F4876C0058808E /* UILabel.cpp */; };
+		B13BE57920F494D40058808E /* UIGameMenuWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE57720F494D40058808E /* UIGameMenuWindow.cpp */; };
+		B13BE57E20F54A660058808E /* GameMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE57C20F54A650058808E /* GameMode.cpp */; };
+		B13BE58120F558720058808E /* SinglePlayMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE57F20F558720058808E /* SinglePlayMode.cpp */; };
+		B13BE58420F559D60058808E /* AIDemoMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE58220F559D60058808E /* AIDemoMode.cpp */; };
+		B13BE58720F559EF0058808E /* CompetitiveMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE58520F559EF0058808E /* CompetitiveMode.cpp */; };
+		B15CAE3820EB12410032E81F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE3720EB12410032E81F /* main.cpp */; };
+		B15CAE4020EB128A0032E81F /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15CAE3F20EB128A0032E81F /* GLUT.framework */; };
+		B15CAE4220EB12910032E81F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15CAE4120EB12910032E81F /* OpenGL.framework */; };
+		B15CAE4720EB137A0032E81F /* opengl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE4520EB137A0032E81F /* opengl.cpp */; };
+		B15CAE4B20EB13D90032E81F /* GameField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE4920EB13D90032E81F /* GameField.cpp */; };
+		B15CAE4E20EB13E50032E81F /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE4C20EB13E50032E81F /* Player.cpp */; };
+		B15CAE5120EB13F30032E81F /* GameContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE4F20EB13F30032E81F /* GameContext.cpp */; };
+		B15CAE5420EB14AB0032E81F /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE5220EB14AB0032E81F /* Drawable.cpp */; };
+		B15CAE6020EB19A40032E81F /* Drawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE5E20EB19A40032E81F /* Drawer.cpp */; };
+		B15CAE6620EB21380032E81F /* IOInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE6420EB21380032E81F /* IOInterface.cpp */; };
+		B15CAE6C20EB35230032E81F /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE6A20EB35230032E81F /* Tile.cpp */; };
+		B15CAE6F20EB35F30032E81F /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE6D20EB35F30032E81F /* Block.cpp */; };
+		B15CAE7B20EB4C240032E81F /* Updatable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE7920EB4C240032E81F /* Updatable.cpp */; };
+		B15CAE7E20EB4CC80032E81F /* Updater.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE7C20EB4CC80032E81F /* Updater.cpp */; };
+		B15CAE8620EBFC040032E81F /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE8420EBFC040032E81F /* Random.cpp */; };
+		B15CAE8820EBFC880032E81F /* ColorDefinition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE8720EBFC880032E81F /* ColorDefinition.cpp */; };
+		B15CAE8B20EC720C0032E81F /* UIFieldBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE8920EC720C0032E81F /* UIFieldBackground.cpp */; };
+		B1B6316520F01685005D5021 /* EvaluationGameField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1B6316320F01685005D5021 /* EvaluationGameField.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B15CAE3220EB12410032E81F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B116D58B20EF1D22003B6C0E /* PlayerAI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerAI.cpp; sourceTree = "<group>"; };
+		B12CD44120F59F84007E8CCA /* UIGameOver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIGameOver.cpp; sourceTree = "<group>"; };
+		B12CD44220F59F84007E8CCA /* UIGameOver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIGameOver.hpp; sourceTree = "<group>"; };
+		B13BE55920F453BA0058808E /* UITitleScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UITitleScreen.cpp; sourceTree = "<group>"; };
+		B13BE55A20F453BA0058808E /* UITitleScreen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UITitleScreen.hpp; sourceTree = "<group>"; };
+		B13BE55D20F454300058808E /* UIButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIButton.cpp; sourceTree = "<group>"; };
+		B13BE55E20F454300058808E /* UIButton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIButton.hpp; sourceTree = "<group>"; };
+		B13BE56020F456150058808E /* TouchEvent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TouchEvent.cpp; sourceTree = "<group>"; };
+		B13BE56120F456150058808E /* TouchEvent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TouchEvent.hpp; sourceTree = "<group>"; };
+		B13BE56320F458040058808E /* UIComponent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIComponent.cpp; sourceTree = "<group>"; };
+		B13BE56420F458040058808E /* UIComponent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIComponent.hpp; sourceTree = "<group>"; };
+		B13BE56720F46BDA0058808E /* UIManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIManager.cpp; sourceTree = "<group>"; };
+		B13BE56820F46BDA0058808E /* UIManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIManager.hpp; sourceTree = "<group>"; };
+		B13BE56A20F46C720058808E /* UIView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIView.cpp; sourceTree = "<group>"; };
+		B13BE56B20F46C720058808E /* UIView.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIView.hpp; sourceTree = "<group>"; };
+		B13BE56F20F4784E0058808E /* UIBaseView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseView.cpp; sourceTree = "<group>"; };
+		B13BE57020F4784E0058808E /* UIBaseView.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIBaseView.hpp; sourceTree = "<group>"; };
+		B13BE57220F4876C0058808E /* UILabel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UILabel.cpp; sourceTree = "<group>"; };
+		B13BE57320F4876C0058808E /* UILabel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UILabel.hpp; sourceTree = "<group>"; };
+		B13BE57720F494D40058808E /* UIGameMenuWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIGameMenuWindow.cpp; sourceTree = "<group>"; };
+		B13BE57820F494D40058808E /* UIGameMenuWindow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIGameMenuWindow.hpp; sourceTree = "<group>"; };
+		B13BE57C20F54A650058808E /* GameMode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameMode.cpp; sourceTree = "<group>"; };
+		B13BE57D20F54A650058808E /* GameMode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameMode.hpp; sourceTree = "<group>"; };
+		B13BE57F20F558720058808E /* SinglePlayMode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SinglePlayMode.cpp; sourceTree = "<group>"; };
+		B13BE58020F558720058808E /* SinglePlayMode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SinglePlayMode.hpp; sourceTree = "<group>"; };
+		B13BE58220F559D60058808E /* AIDemoMode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AIDemoMode.cpp; sourceTree = "<group>"; };
+		B13BE58320F559D60058808E /* AIDemoMode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AIDemoMode.hpp; sourceTree = "<group>"; };
+		B13BE58520F559EF0058808E /* CompetitiveMode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CompetitiveMode.cpp; sourceTree = "<group>"; };
+		B13BE58620F559EF0058808E /* CompetitiveMode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CompetitiveMode.hpp; sourceTree = "<group>"; };
+		B14FF02F20EED02800891DD3 /* PlayerAI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PlayerAI.hpp; sourceTree = "<group>"; };
+		B15CAE3420EB12410032E81F /* tetris */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tetris; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15CAE3720EB12410032E81F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B15CAE3F20EB128A0032E81F /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		B15CAE4120EB12910032E81F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		B15CAE4520EB137A0032E81F /* opengl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = opengl.cpp; sourceTree = "<group>"; };
+		B15CAE4620EB137A0032E81F /* opengl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = opengl.hpp; sourceTree = "<group>"; };
+		B15CAE4920EB13D90032E81F /* GameField.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameField.cpp; sourceTree = "<group>"; };
+		B15CAE4A20EB13D90032E81F /* GameField.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameField.hpp; sourceTree = "<group>"; };
+		B15CAE4C20EB13E50032E81F /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		B15CAE4D20EB13E50032E81F /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		B15CAE4F20EB13F30032E81F /* GameContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameContext.cpp; sourceTree = "<group>"; };
+		B15CAE5020EB13F30032E81F /* GameContext.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameContext.hpp; sourceTree = "<group>"; };
+		B15CAE5220EB14AB0032E81F /* Drawable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Drawable.cpp; sourceTree = "<group>"; };
+		B15CAE5320EB14AB0032E81F /* Drawable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Drawable.hpp; sourceTree = "<group>"; };
+		B15CAE5620EB169B0032E81F /* Constants.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Constants.hpp; sourceTree = "<group>"; };
+		B15CAE5920EB17800032E81F /* Utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Utils.hpp; sourceTree = "<group>"; };
+		B15CAE5E20EB19A40032E81F /* Drawer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Drawer.cpp; sourceTree = "<group>"; };
+		B15CAE5F20EB19A40032E81F /* Drawer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Drawer.hpp; sourceTree = "<group>"; };
+		B15CAE6220EB1A300032E81F /* Singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Singleton.hpp; sourceTree = "<group>"; };
+		B15CAE6420EB21380032E81F /* IOInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IOInterface.cpp; sourceTree = "<group>"; };
+		B15CAE6520EB21380032E81F /* IOInterface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IOInterface.hpp; sourceTree = "<group>"; };
+		B15CAE6820EB25E80032E81F /* ColorDefinition.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ColorDefinition.hpp; sourceTree = "<group>"; };
+		B15CAE6A20EB35230032E81F /* Tile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
+		B15CAE6B20EB35230032E81F /* Tile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tile.hpp; sourceTree = "<group>"; };
+		B15CAE6D20EB35F30032E81F /* Block.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Block.cpp; sourceTree = "<group>"; };
+		B15CAE6E20EB35F30032E81F /* Block.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Block.hpp; sourceTree = "<group>"; };
+		B15CAE7120EB38860032E81F /* Vector2d.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vector2d.hpp; sourceTree = "<group>"; };
+		B15CAE7420EB3AD70032E81F /* Coordinates.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Coordinates.hpp; sourceTree = "<group>"; };
+		B15CAE7920EB4C240032E81F /* Updatable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Updatable.cpp; sourceTree = "<group>"; };
+		B15CAE7A20EB4C240032E81F /* Updatable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Updatable.hpp; sourceTree = "<group>"; };
+		B15CAE7C20EB4CC80032E81F /* Updater.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Updater.cpp; sourceTree = "<group>"; };
+		B15CAE7D20EB4CC80032E81F /* Updater.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Updater.hpp; sourceTree = "<group>"; };
+		B15CAE8120EB5FCE0032E81F /* Keyboard.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Keyboard.hpp; sourceTree = "<group>"; };
+		B15CAE8420EBFC040032E81F /* Random.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Random.cpp; sourceTree = "<group>"; };
+		B15CAE8520EBFC040032E81F /* Random.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Random.hpp; sourceTree = "<group>"; };
+		B15CAE8720EBFC880032E81F /* ColorDefinition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ColorDefinition.cpp; sourceTree = "<group>"; };
+		B15CAE8920EC720C0032E81F /* UIFieldBackground.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIFieldBackground.cpp; sourceTree = "<group>"; };
+		B15CAE8A20EC720C0032E81F /* UIFieldBackground.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIFieldBackground.hpp; sourceTree = "<group>"; };
+		B19831E720F6D1580025A6B5 /* Hookable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hookable.hpp; sourceTree = "<group>"; };
+		B19831ED20F6EA7A0025A6B5 /* Anchor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Anchor.hpp; sourceTree = "<group>"; };
+		B19831F020F6ED150025A6B5 /* Size.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Size.hpp; sourceTree = "<group>"; };
+		B1B6316320F01685005D5021 /* EvaluationGameField.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EvaluationGameField.cpp; sourceTree = "<group>"; };
+		B1B6316420F01685005D5021 /* EvaluationGameField.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EvaluationGameField.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B15CAE3120EB12410032E81F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15CAE4220EB12910032E81F /* OpenGL.framework in Frameworks */,
+				B15CAE4020EB128A0032E81F /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B13BE55C20F4541A0058808E /* components */ = {
+			isa = PBXGroup;
+			children = (
+				B13BE56320F458040058808E /* UIComponent.cpp */,
+				B13BE56420F458040058808E /* UIComponent.hpp */,
+				B13BE56F20F4784E0058808E /* UIBaseView.cpp */,
+				B13BE57020F4784E0058808E /* UIBaseView.hpp */,
+				B13BE55D20F454300058808E /* UIButton.cpp */,
+				B13BE55E20F454300058808E /* UIButton.hpp */,
+				B13BE56A20F46C720058808E /* UIView.cpp */,
+				B13BE56B20F46C720058808E /* UIView.hpp */,
+				B13BE57220F4876C0058808E /* UILabel.cpp */,
+				B13BE57320F4876C0058808E /* UILabel.hpp */,
+				B19831ED20F6EA7A0025A6B5 /* Anchor.hpp */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		B13BE56D20F474260058808E /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				B13BE55920F453BA0058808E /* UITitleScreen.cpp */,
+				B13BE55A20F453BA0058808E /* UITitleScreen.hpp */,
+				B15CAE8920EC720C0032E81F /* UIFieldBackground.cpp */,
+				B15CAE8A20EC720C0032E81F /* UIFieldBackground.hpp */,
+				B13BE57720F494D40058808E /* UIGameMenuWindow.cpp */,
+				B13BE57820F494D40058808E /* UIGameMenuWindow.hpp */,
+				B12CD44120F59F84007E8CCA /* UIGameOver.cpp */,
+				B12CD44220F59F84007E8CCA /* UIGameOver.hpp */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		B13BE56E20F474330058808E /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				B13BE55C20F4541A0058808E /* components */,
+				B13BE56720F46BDA0058808E /* UIManager.cpp */,
+				B13BE56820F46BDA0058808E /* UIManager.hpp */,
+			);
+			name = ui;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		B13BE57B20F549B90058808E /* gameModes */ = {
+			isa = PBXGroup;
+			children = (
+				B13BE57C20F54A650058808E /* GameMode.cpp */,
+				B13BE57D20F54A650058808E /* GameMode.hpp */,
+				B13BE57F20F558720058808E /* SinglePlayMode.cpp */,
+				B13BE58020F558720058808E /* SinglePlayMode.hpp */,
+				B13BE58220F559D60058808E /* AIDemoMode.cpp */,
+				B13BE58320F559D60058808E /* AIDemoMode.hpp */,
+				B13BE58520F559EF0058808E /* CompetitiveMode.cpp */,
+				B13BE58620F559EF0058808E /* CompetitiveMode.hpp */,
+			);
+			path = gameModes;
+			sourceTree = "<group>";
+		};
+		B14FF02D20EECFED00891DD3 /* ai */ = {
+			isa = PBXGroup;
+			children = (
+				B116D58B20EF1D22003B6C0E /* PlayerAI.cpp */,
+				B14FF02F20EED02800891DD3 /* PlayerAI.hpp */,
+				B1B6316320F01685005D5021 /* EvaluationGameField.cpp */,
+				B1B6316420F01685005D5021 /* EvaluationGameField.hpp */,
+			);
+			path = ai;
+			sourceTree = "<group>";
+		};
+		B15CAE2B20EB12410032E81F = {
+			isa = PBXGroup;
+			children = (
+				B15CAE3620EB12410032E81F /* tetris */,
+				B15CAE3520EB12410032E81F /* Products */,
+				B15CAE3E20EB128A0032E81F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B15CAE3520EB12410032E81F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B15CAE3420EB12410032E81F /* tetris */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B15CAE3620EB12410032E81F /* tetris */ = {
+			isa = PBXGroup;
+			children = (
+				B15CAE7F20EB56870032E81F /* interface */,
+				B15CAE4820EB13CB0032E81F /* core */,
+				B15CAE4320EB13460032E81F /* platforms */,
+				B15CAE3720EB12410032E81F /* main.cpp */,
+			);
+			path = tetris;
+			sourceTree = "<group>";
+		};
+		B15CAE3E20EB128A0032E81F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B15CAE4120EB12910032E81F /* OpenGL.framework */,
+				B15CAE3F20EB128A0032E81F /* GLUT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B15CAE4320EB13460032E81F /* platforms */ = {
+			isa = PBXGroup;
+			children = (
+				B15CAE4420EB13570032E81F /* opengl */,
+			);
+			path = platforms;
+			sourceTree = "<group>";
+		};
+		B15CAE4420EB13570032E81F /* opengl */ = {
+			isa = PBXGroup;
+			children = (
+				B15CAE4520EB137A0032E81F /* opengl.cpp */,
+				B15CAE4620EB137A0032E81F /* opengl.hpp */,
+			);
+			path = opengl;
+			sourceTree = "<group>";
+		};
+		B15CAE4820EB13CB0032E81F /* core */ = {
+			isa = PBXGroup;
+			children = (
+				B15CAE8320EBEBD00032E81F /* generals */,
+				B13BE56D20F474260058808E /* ui */,
+				B13BE57B20F549B90058808E /* gameModes */,
+				B14FF02D20EECFED00891DD3 /* ai */,
+				B15CAE4F20EB13F30032E81F /* GameContext.cpp */,
+				B15CAE5020EB13F30032E81F /* GameContext.hpp */,
+				B15CAE4920EB13D90032E81F /* GameField.cpp */,
+				B15CAE4A20EB13D90032E81F /* GameField.hpp */,
+				B15CAE4C20EB13E50032E81F /* Player.cpp */,
+				B15CAE4D20EB13E50032E81F /* Player.hpp */,
+				B15CAE6A20EB35230032E81F /* Tile.cpp */,
+				B15CAE6B20EB35230032E81F /* Tile.hpp */,
+				B15CAE6D20EB35F30032E81F /* Block.cpp */,
+				B15CAE6E20EB35F30032E81F /* Block.hpp */,
+				B15CAE5620EB169B0032E81F /* Constants.hpp */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		B15CAE7F20EB56870032E81F /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				B15CAE6420EB21380032E81F /* IOInterface.cpp */,
+				B15CAE6520EB21380032E81F /* IOInterface.hpp */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
+		B15CAE8320EBEBD00032E81F /* generals */ = {
+			isa = PBXGroup;
+			children = (
+				B13BE56E20F474330058808E /* ui */,
+				B15CAE7920EB4C240032E81F /* Updatable.cpp */,
+				B15CAE7A20EB4C240032E81F /* Updatable.hpp */,
+				B15CAE5220EB14AB0032E81F /* Drawable.cpp */,
+				B15CAE5320EB14AB0032E81F /* Drawable.hpp */,
+				B15CAE5E20EB19A40032E81F /* Drawer.cpp */,
+				B15CAE5F20EB19A40032E81F /* Drawer.hpp */,
+				B15CAE7C20EB4CC80032E81F /* Updater.cpp */,
+				B15CAE7D20EB4CC80032E81F /* Updater.hpp */,
+				B15CAE8420EBFC040032E81F /* Random.cpp */,
+				B15CAE8520EBFC040032E81F /* Random.hpp */,
+				B15CAE8720EBFC880032E81F /* ColorDefinition.cpp */,
+				B15CAE6820EB25E80032E81F /* ColorDefinition.hpp */,
+				B15CAE7120EB38860032E81F /* Vector2d.hpp */,
+				B15CAE7420EB3AD70032E81F /* Coordinates.hpp */,
+				B15CAE6220EB1A300032E81F /* Singleton.hpp */,
+				B15CAE8120EB5FCE0032E81F /* Keyboard.hpp */,
+				B15CAE5920EB17800032E81F /* Utils.hpp */,
+				B13BE56020F456150058808E /* TouchEvent.cpp */,
+				B13BE56120F456150058808E /* TouchEvent.hpp */,
+				B19831E720F6D1580025A6B5 /* Hookable.hpp */,
+				B19831F020F6ED150025A6B5 /* Size.hpp */,
+			);
+			path = generals;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B15CAE3320EB12410032E81F /* tetris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15CAE3B20EB12410032E81F /* Build configuration list for PBXNativeTarget "tetris" */;
+			buildPhases = (
+				B15CAE3020EB12410032E81F /* Sources */,
+				B15CAE3120EB12410032E81F /* Frameworks */,
+				B15CAE3220EB12410032E81F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tetris;
+			productName = tetris;
+			productReference = B15CAE3420EB12410032E81F /* tetris */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B15CAE2C20EB12410032E81F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "佐藤駿";
+				TargetAttributes = {
+					B15CAE3320EB12410032E81F = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = B15CAE2F20EB12410032E81F /* Build configuration list for PBXProject "tetris" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B15CAE2B20EB12410032E81F;
+			productRefGroup = B15CAE3520EB12410032E81F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B15CAE3320EB12410032E81F /* tetris */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B15CAE3020EB12410032E81F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B13BE58720F559EF0058808E /* CompetitiveMode.cpp in Sources */,
+				B15CAE6C20EB35230032E81F /* Tile.cpp in Sources */,
+				B15CAE7E20EB4CC80032E81F /* Updater.cpp in Sources */,
+				B15CAE6020EB19A40032E81F /* Drawer.cpp in Sources */,
+				B1B6316520F01685005D5021 /* EvaluationGameField.cpp in Sources */,
+				B13BE56220F456150058808E /* TouchEvent.cpp in Sources */,
+				B13BE55F20F454300058808E /* UIButton.cpp in Sources */,
+				B13BE55B20F453BA0058808E /* UITitleScreen.cpp in Sources */,
+				B15CAE6620EB21380032E81F /* IOInterface.cpp in Sources */,
+				B116D58C20EF1D22003B6C0E /* PlayerAI.cpp in Sources */,
+				B15CAE8B20EC720C0032E81F /* UIFieldBackground.cpp in Sources */,
+				B15CAE4E20EB13E50032E81F /* Player.cpp in Sources */,
+				B15CAE4B20EB13D90032E81F /* GameField.cpp in Sources */,
+				B15CAE7B20EB4C240032E81F /* Updatable.cpp in Sources */,
+				B13BE57E20F54A660058808E /* GameMode.cpp in Sources */,
+				B15CAE5120EB13F30032E81F /* GameContext.cpp in Sources */,
+				B13BE56C20F46C720058808E /* UIView.cpp in Sources */,
+				B15CAE5420EB14AB0032E81F /* Drawable.cpp in Sources */,
+				B15CAE4720EB137A0032E81F /* opengl.cpp in Sources */,
+				B15CAE8620EBFC040032E81F /* Random.cpp in Sources */,
+				B15CAE3820EB12410032E81F /* main.cpp in Sources */,
+				B13BE58120F558720058808E /* SinglePlayMode.cpp in Sources */,
+				B13BE58420F559D60058808E /* AIDemoMode.cpp in Sources */,
+				B13BE57120F4784E0058808E /* UIBaseView.cpp in Sources */,
+				B15CAE8820EBFC880032E81F /* ColorDefinition.cpp in Sources */,
+				B15CAE6F20EB35F30032E81F /* Block.cpp in Sources */,
+				B12CD44320F59F84007E8CCA /* UIGameOver.cpp in Sources */,
+				B13BE57920F494D40058808E /* UIGameMenuWindow.cpp in Sources */,
+				B13BE56520F458040058808E /* UIComponent.cpp in Sources */,
+				B13BE56920F46BDA0058808E /* UIManager.cpp in Sources */,
+				B13BE57420F4876C0058808E /* UILabel.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B15CAE3920EB12410032E81F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B15CAE3A20EB12410032E81F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B15CAE3C20EB12410032E81F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ATL3QJQM9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B15CAE3D20EB12410032E81F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ATL3QJQM9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B15CAE2F20EB12410032E81F /* Build configuration list for PBXProject "tetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15CAE3920EB12410032E81F /* Debug */,
+				B15CAE3A20EB12410032E81F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B15CAE3B20EB12410032E81F /* Build configuration list for PBXNativeTarget "tetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15CAE3C20EB12410032E81F /* Debug */,
+				B15CAE3D20EB12410032E81F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B15CAE2C20EB12410032E81F /* Project object */;
+}
