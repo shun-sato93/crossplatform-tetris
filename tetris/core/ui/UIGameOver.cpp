@@ -31,14 +31,11 @@ UIGameOver::~UIGameOver() {
 void UIGameOver::setup() {
     GameContext::get().setPauseGame(true);
     
-    auto windowSize = getWindowSize();
-    
     const int menuWindowWidth = 300;
     const int menuWindowHeight = 300;
     
     auto menuWindowView = new UIView(
-                                        menuWindowWidth,
-                                        menuWindowHeight,
+                                        Size(menuWindowWidth, menuWindowHeight),
                                         Color::GREY);
     menuWindowView->setAnchor(Anchor::CENTER);
     
@@ -56,9 +53,7 @@ void UIGameOver::setup() {
     
     const int buttonWidth = 150;
     const int buttonHeight = 50;
-    auto resumeButton = new UIButton(
-                                          buttonWidth,
-                                          buttonHeight);
+    auto resumeButton = new UIButton(Size(buttonWidth, buttonHeight));
     resumeButton->setTitle("Retry");
     resumeButton->setCoordinates(vec2d(0, 50), Anchor::CENTER);
     resumeButton->setBackgroundColor(Color::WHITE);
@@ -70,9 +65,7 @@ void UIGameOver::setup() {
         close();
     });
     
-    auto backToTitleButton = new UIButton(
-                                               buttonWidth,
-                                               buttonHeight);
+    auto backToTitleButton = new UIButton(Size(buttonWidth, buttonHeight));
     backToTitleButton->setTitle("Back to Title");
     backToTitleButton->setCoordinates(vec2d(0, -50), Anchor::CENTER);
     backToTitleButton->setBackgroundColor(Color::WHITE);

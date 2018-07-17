@@ -16,6 +16,9 @@
 class GameField;
 class Tile;
 
+/**
+ * Falling block class.
+ */
 class Block {
 public:
     Block(GameField* gameField);

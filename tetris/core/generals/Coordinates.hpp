@@ -9,8 +9,9 @@
 #ifndef Coordinates_hpp
 #define Coordinates_hpp
 
-#include "Vector2d.hpp"
 #include "Constants.hpp"
+#include "Size.hpp"
+#include "Vector2d.hpp"
 
 /**
  * Coordinates.hpp defines functions that are related to coordinates and window size calculation.
@@ -39,8 +40,8 @@ inline vec2d getVisibleFieldSizeInPoint() {
                  (FIELD_HEIGHT - FIELD_INVISIBLE_TOP_OFFSET) * (TILE_SIZE + TILE_OFFSET) - TILE_OFFSET);
 }
 
-inline vec2d getWindowSize() {
-    return vec2d(WINDOW_WIDTH, WINDOW_HEIGHT);
+inline Size getWindowSize() {
+    return Size(WINDOW_WIDTH, WINDOW_HEIGHT);
 }
 
 #endif /* Coordinates_hpp */

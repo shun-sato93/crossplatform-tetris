@@ -8,8 +8,6 @@
 
 #include "Updater.hpp"
 
-#include <iostream>
-
 #include "Updatable.hpp"
 
 
@@ -20,7 +18,6 @@ Updater::Updater()
 Updater::~Updater() {}
 
 void Updater::update(bool isContinuing)  {
-//    std::cout << "test Updater:update start" << std::endl;
     if (!isContinuing) {
         for (auto it=items.begin(); it!=items.end(); ++it) {
             (*it)->setHasUpdatedInThisFrame(false);
@@ -43,8 +40,6 @@ void Updater::update(bool isContinuing)  {
             return;
         }
     }
-    
-//    std::cout << "test Updater:update end" << std::endl;
 }
 
 void Updater::registerUpdatable(Updatable* item) {

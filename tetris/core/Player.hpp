@@ -19,6 +19,9 @@
 class GameField;
 class UIFieldBackground;
 
+/**
+ *
+ */
 class Player: public Updatable {
 public:
     Player();

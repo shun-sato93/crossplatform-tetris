@@ -13,8 +13,10 @@
  * Constants.hpp defines constant global variables.
  */
 
+
 const int WINDOW_WIDTH = 520;
 const int WINDOW_HEIGHT = 690;
+// window width for two player mode
 const int WINDOW_WIDTH_TWO_PLAYER = WINDOW_WIDTH * 2;
 
 const int FIELD_WIDTH = 10;

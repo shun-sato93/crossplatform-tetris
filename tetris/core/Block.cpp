@@ -16,9 +16,9 @@
 #include "Tile.hpp"
 #include "Utils.hpp"
 
-const int BLOCK_WIDTH = 5;
+const int BLOCK_SIZE = 5;
 
-const int BLOCK_TYPES[][BLOCK_WIDTH][BLOCK_WIDTH] = {
+const int BLOCK_TYPES[][BLOCK_SIZE][BLOCK_SIZE] = {
     {
         {0, 0, 0, 0, 0},
         {0, 0, 1, 0, 0},
@@ -78,12 +78,12 @@ const int BLOCK_TYPES[][BLOCK_WIDTH][BLOCK_WIDTH] = {
 };
 
 Block::Block(GameField* gameField) {
-    tiles.resize(BLOCK_WIDTH);
+    tiles.resize(BLOCK_SIZE);
     for (int i=0; i<tiles.size(); ++i) {
-        tiles[i].resize(BLOCK_WIDTH);
+        tiles[i].resize(BLOCK_SIZE);
     }
-    for (int i=0; i<BLOCK_WIDTH; ++i) {
-        for (int j=0; j<BLOCK_WIDTH; ++j) {
+    for (int i=0; i<BLOCK_SIZE; ++i) {
+        for (int j=0; j<BLOCK_SIZE; ++j) {
             tiles[i][j] = new Tile(gameField, coordinates.x+i, coordinates.y+j, Tile::EMPTY, Color::Types::NONE, 2);
         }
     }
@@ -98,7 +98,7 @@ Block::~Block() {
 }
 
 void Block::setupNewBlockAtOriginalPosition() {
-    coordinates.set(FIELD_WIDTH / 2 - 3, FIELD_HEIGHT-BLOCK_WIDTH);
+    coordinates.set(FIELD_WIDTH / 2 - 3, FIELD_HEIGHT-BLOCK_SIZE);
     updateTileCoordinates();
     Color::Types randomColor = Color::getRandomColor();
     
@@ -126,21 +126,21 @@ void Block::setupNewBlockAtOriginalPosition() {
 }
 
 void Block::rotate(std::function<bool(const Block*)> checkMovable) {
-    Tile::TileStatus tempTileStatus[BLOCK_WIDTH][BLOCK_WIDTH];
+    Tile::TileStatus tempTileStatus[BLOCK_SIZE][BLOCK_SIZE];
     
-    for (int i = 0; i < BLOCK_WIDTH; ++i) {
-        for (int j = 0; j < BLOCK_WIDTH; ++j) {
+    for (int i = 0; i < BLOCK_SIZE; ++i) {
+        for (int j = 0; j < BLOCK_SIZE; ++j) {
             tempTileStatus[i][j] = tiles[i][j]->getStatus();
         }
     }
-    for (int i = 0; i < BLOCK_WIDTH; ++i) {
-        for (int j = 0; j < BLOCK_WIDTH; ++j) {
-            tiles[i][j]->setStatus(tempTileStatus[BLOCK_WIDTH - j - 1][i]);
+    for (int i = 0; i < BLOCK_SIZE; ++i) {
+        for (int j = 0; j < BLOCK_SIZE; ++j) {
+            tiles[i][j]->setStatus(tempTileStatus[BLOCK_SIZE - j - 1][i]);
         }
     }
     if (!checkMovable(this)) {
-        for (int i = 0; i < BLOCK_WIDTH; ++i) {
-            for (int j = 0; j < BLOCK_WIDTH; ++j) {
+        for (int i = 0; i < BLOCK_SIZE; ++i) {
+            for (int j = 0; j < BLOCK_SIZE; ++j) {
                 tiles[i][j]->setStatus(tempTileStatus[i][j]);
             }
         }
@@ -174,7 +174,7 @@ const std::vector<std::vector<Tile*>>& Block::getTiles() const {
 }
 
 const int Block::getSize() const {
-    return BLOCK_WIDTH;
+    return BLOCK_SIZE;
 }
 
 void Block::copy(const Block* block) {

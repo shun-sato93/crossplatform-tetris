@@ -8,8 +8,6 @@
 
 #include "Drawer.hpp"
 
-#include <iostream>
-
 #include "Drawable.hpp"
 
 Drawer::Drawer()
@@ -28,7 +26,7 @@ void Drawer::draw() const {
     }
 }
 
-void Drawer::registerDrawable(Drawable* item) {
+void Drawer::registerDrawable(const Drawable* item) {
     items.push_back(item);
     sortDrawables();
 }
@@ -38,6 +36,6 @@ void Drawer::sortDrawables() {
     sort(items.begin(), items.end(), &Drawable::zindexAscend);
 }
 
-void Drawer::unregisterDrawable(Drawable* item) {
+void Drawer::unregisterDrawable(const Drawable* item) {
     items.erase(remove(items.begin(), items.end(), item), items.end());
 }

@@ -28,7 +28,7 @@ public:
     EvaluationGameField();
     ~EvaluationGameField();
     
-    std::vector<PlayerAI::BlockOperation> getNextBlockOperations(const GameField* gameField);
+    std::vector<PlayerAI::BlockOperation> computeNextBlockOperations(const GameField* gameField);
     
 private:
     struct SpacesEvaluation {

@@ -11,6 +11,10 @@
 
 #include <functional>
 
+/**
+ * This class enables hooking variables changes.
+ * When a value is assigned to a variable, it fires a defined hook function.
+ */
 template<typename T>
 class hookable {
 public:
@@ -27,10 +31,6 @@ public:
     ,hook(nullptr)
     {}
     
-    void setHook(std::function<void(const T& oldValue, const T& newValue)> hook) {
-        this->hook = hook;
-    }
-    
     T& operator=(const T& rhs) {
         T old = value;
         value = rhs;
@@ -44,12 +44,14 @@ public:
         value = rhs.value;
     }
     
+    void setHook(std::function<void(const T& oldValue, const T& newValue)> hook) {
+        this->hook = hook;
+    }
+    
     const T& get() const {
         return value;
     }
 private:
-    
-    
     T value;
     std::function<void(const T& oldValue, const T& newValue)> hook;
 };

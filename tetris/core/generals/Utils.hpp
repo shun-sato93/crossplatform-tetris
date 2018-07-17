@@ -20,11 +20,10 @@ static bool clk_initialized = false;
  */
 
 /**
- * Delete pointers. It has nullptr check so it won't delete same pointers twice.
+ * Delete pointers. Use this function instead of delete to avoid deleting same pointers twice.
  */
 template<class T>
 static inline void SafeDelete( T*& p ){
-    if (p == nullptr) { return; }
     delete (p);
     (p) = nullptr;
 }

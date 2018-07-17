@@ -22,10 +22,10 @@ PlayerAI::PlayerAI()
 ,evaluationGameField(new EvaluationGameField())
 {
     gameField->setCallbackNewBlockAdded([=] () {
-        operationQueue = evaluationGameField->getNextBlockOperations(gameField);
+        operationQueue = evaluationGameField->computeNextBlockOperations(gameField);
     });
     
-    operationQueue = evaluationGameField->getNextBlockOperations(gameField);
+    operationQueue = evaluationGameField->computeNextBlockOperations(gameField);
 }
 
 PlayerAI::~PlayerAI() {

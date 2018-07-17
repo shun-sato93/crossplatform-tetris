@@ -25,7 +25,6 @@ public:
     
     void setHasUpdatedInThisFrame(bool hasUpdatedInThisFrame);
     bool hasUpdatedInThisFrame() const;
-    void resetFlag();
     
     void setPause(bool isPaused);
     bool isPaused() const;

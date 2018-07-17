@@ -30,11 +30,11 @@ public:
     /**
      * Automatically called when a drawable object is created. Don't call this function by yourself.
      */
-    void registerDrawable(Drawable* item);
+    void registerDrawable(const Drawable* item);
     /**
      * Automatically called when a drawable object is deleted. Don't call this function by yourself.
      */
-    void unregisterDrawable(Drawable* item);
+    void unregisterDrawable(const Drawable* item);
     
     /**
      * Sort drawables by zIndex order
@@ -44,7 +44,7 @@ private:
     friend class Singleton<Drawer>;
     Drawer();
     
-    std::vector<Drawable*> items;
+    std::vector<const Drawable*> items;
 };
 
 #endif /* Drawer_hpp */

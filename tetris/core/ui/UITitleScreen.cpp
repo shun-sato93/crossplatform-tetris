@@ -28,11 +28,8 @@ UITitleScreen::~UITitleScreen()
 void UITitleScreen::setup() {
     color = Color::WHITE;
     
-    const int buttonWidth = 150;
-    const int buttonHeight = 50;
-    UIButton* startPlayerButton = new UIButton(
-                                               buttonWidth,
-                                               buttonHeight);
+    const Size buttonSize(150, 50);
+    UIButton* startPlayerButton = new UIButton(buttonSize);
     startPlayerButton->setCoordinates(vec2d(0, 100), Anchor::CENTER);
     startPlayerButton->setTitle("Single Play");
     startPlayerButton->setBackgroundColor(Color::GREY);
@@ -41,9 +38,7 @@ void UITitleScreen::setup() {
         close();
     });
     
-    UIButton* watchAIDemoButton = new UIButton(
-                                               buttonWidth,
-                                               buttonHeight);
+    UIButton* watchAIDemoButton = new UIButton(buttonSize);
     watchAIDemoButton->setCoordinates(vec2d(0, 0), Anchor::CENTER);
     watchAIDemoButton->setTitle("Watch AI Demo");
     watchAIDemoButton->setBackgroundColor(Color::GREY);
@@ -52,9 +47,7 @@ void UITitleScreen::setup() {
         close();
     });
     
-    UIButton* competitiveButton = new UIButton(
-                                               buttonWidth,
-                                               buttonHeight);
+    UIButton* competitiveButton = new UIButton(buttonSize);
     competitiveButton->setCoordinates(vec2d(0, -100), Anchor::CENTER);
     competitiveButton->setTitle("VS AI");
     competitiveButton->setBackgroundColor(Color::GREY);

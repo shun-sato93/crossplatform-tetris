@@ -29,8 +29,8 @@ void OpenGL::setup(int argc, char** argv)
     glutInit(&argc, argv);
     
     /* set the window size */
-    vec2d fieldSizeInPoint = getWindowSize();
-    glutInitWindowSize(fieldSizeInPoint.x, fieldSizeInPoint.y);
+    Size windowSize = getWindowSize();
+    glutInitWindowSize(windowSize.width, windowSize.height);
     
     /* set the display mode to Red, Green, Blue and Alpha
      allocate a depth buffer
@@ -68,8 +68,8 @@ void OpenGL::setup(int argc, char** argv)
 void OpenGL::mouseInput(int button, int state, int x, int y) {
     std::cout << "OpenGL::mouseInput x=" << x << " y=" << y << endl;
     if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
-        vec2d fieldSizeInPoint = getWindowSize();
-        TouchEvent touchEvent = TouchEvent(TouchEvent::DOWN, vec2d(x, fieldSizeInPoint.y - y));
+        auto windowSize = getWindowSize();
+        TouchEvent touchEvent = TouchEvent(TouchEvent::DOWN, vec2d(x, windowSize.height - y));
         UIManager::get().handleTouchEvent(touchEvent);
     }
 }
@@ -78,7 +78,7 @@ void OpenGL::mouseInput(int button, int state, int x, int y) {
 void OpenGL::keyboardInput(unsigned char key, int x, int y) {
     cout << key << endl;
     switch (key) {
-        case ' ':
+        case ' ': // Space key
             IOInterface::get().keyboardInput(Keyboard::SPACE);
             break;
         case 27: // ESC key

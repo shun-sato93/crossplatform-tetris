@@ -10,13 +10,7 @@
 		B116D58C20EF1D22003B6C0E /* PlayerAI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B116D58B20EF1D22003B6C0E /* PlayerAI.cpp */; };
 		B12CD44320F59F84007E8CCA /* UIGameOver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B12CD44120F59F84007E8CCA /* UIGameOver.cpp */; };
 		B13BE55B20F453BA0058808E /* UITitleScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE55920F453BA0058808E /* UITitleScreen.cpp */; };
-		B13BE55F20F454300058808E /* UIButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE55D20F454300058808E /* UIButton.cpp */; };
 		B13BE56220F456150058808E /* TouchEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE56020F456150058808E /* TouchEvent.cpp */; };
-		B13BE56520F458040058808E /* UIComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE56320F458040058808E /* UIComponent.cpp */; };
-		B13BE56920F46BDA0058808E /* UIManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE56720F46BDA0058808E /* UIManager.cpp */; };
-		B13BE56C20F46C720058808E /* UIView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE56A20F46C720058808E /* UIView.cpp */; };
-		B13BE57120F4784E0058808E /* UIBaseView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE56F20F4784E0058808E /* UIBaseView.cpp */; };
-		B13BE57420F4876C0058808E /* UILabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE57220F4876C0058808E /* UILabel.cpp */; };
 		B13BE57920F494D40058808E /* UIGameMenuWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE57720F494D40058808E /* UIGameMenuWindow.cpp */; };
 		B13BE57E20F54A660058808E /* GameMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE57C20F54A650058808E /* GameMode.cpp */; };
 		B13BE58120F558720058808E /* SinglePlayMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B13BE57F20F558720058808E /* SinglePlayMode.cpp */; };
@@ -40,6 +34,12 @@
 		B15CAE8820EBFC880032E81F /* ColorDefinition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE8720EBFC880032E81F /* ColorDefinition.cpp */; };
 		B15CAE8B20EC720C0032E81F /* UIFieldBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15CAE8920EC720C0032E81F /* UIFieldBackground.cpp */; };
 		B1B6316520F01685005D5021 /* EvaluationGameField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1B6316320F01685005D5021 /* EvaluationGameField.cpp */; };
+		B1C8F38E20F72D34002E7B14 /* UILabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C8F38420F72D32002E7B14 /* UILabel.cpp */; };
+		B1C8F38F20F72D34002E7B14 /* UIView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C8F38620F72D33002E7B14 /* UIView.cpp */; };
+		B1C8F39020F72D34002E7B14 /* UIBaseView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C8F38920F72D33002E7B14 /* UIBaseView.cpp */; };
+		B1C8F39120F72D34002E7B14 /* UIComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C8F38C20F72D34002E7B14 /* UIComponent.cpp */; };
+		B1C8F39220F72D34002E7B14 /* UIButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C8F38D20F72D34002E7B14 /* UIButton.cpp */; };
+		B1C8F39520F72D46002E7B14 /* UIManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C8F39320F72D45002E7B14 /* UIManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,20 +60,8 @@
 		B12CD44220F59F84007E8CCA /* UIGameOver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIGameOver.hpp; sourceTree = "<group>"; };
 		B13BE55920F453BA0058808E /* UITitleScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UITitleScreen.cpp; sourceTree = "<group>"; };
 		B13BE55A20F453BA0058808E /* UITitleScreen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UITitleScreen.hpp; sourceTree = "<group>"; };
-		B13BE55D20F454300058808E /* UIButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIButton.cpp; sourceTree = "<group>"; };
-		B13BE55E20F454300058808E /* UIButton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIButton.hpp; sourceTree = "<group>"; };
 		B13BE56020F456150058808E /* TouchEvent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TouchEvent.cpp; sourceTree = "<group>"; };
 		B13BE56120F456150058808E /* TouchEvent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TouchEvent.hpp; sourceTree = "<group>"; };
-		B13BE56320F458040058808E /* UIComponent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIComponent.cpp; sourceTree = "<group>"; };
-		B13BE56420F458040058808E /* UIComponent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIComponent.hpp; sourceTree = "<group>"; };
-		B13BE56720F46BDA0058808E /* UIManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIManager.cpp; sourceTree = "<group>"; };
-		B13BE56820F46BDA0058808E /* UIManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIManager.hpp; sourceTree = "<group>"; };
-		B13BE56A20F46C720058808E /* UIView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIView.cpp; sourceTree = "<group>"; };
-		B13BE56B20F46C720058808E /* UIView.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIView.hpp; sourceTree = "<group>"; };
-		B13BE56F20F4784E0058808E /* UIBaseView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIBaseView.cpp; sourceTree = "<group>"; };
-		B13BE57020F4784E0058808E /* UIBaseView.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIBaseView.hpp; sourceTree = "<group>"; };
-		B13BE57220F4876C0058808E /* UILabel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UILabel.cpp; sourceTree = "<group>"; };
-		B13BE57320F4876C0058808E /* UILabel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UILabel.hpp; sourceTree = "<group>"; };
 		B13BE57720F494D40058808E /* UIGameMenuWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIGameMenuWindow.cpp; sourceTree = "<group>"; };
 		B13BE57820F494D40058808E /* UIGameMenuWindow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIGameMenuWindow.hpp; sourceTree = "<group>"; };
 		B13BE57C20F54A650058808E /* GameMode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameMode.cpp; sourceTree = "<group>"; };
@@ -124,10 +112,22 @@
 		B15CAE8920EC720C0032E81F /* UIFieldBackground.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIFieldBackground.cpp; sourceTree = "<group>"; };
 		B15CAE8A20EC720C0032E81F /* UIFieldBackground.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIFieldBackground.hpp; sourceTree = "<group>"; };
 		B19831E720F6D1580025A6B5 /* Hookable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hookable.hpp; sourceTree = "<group>"; };
-		B19831ED20F6EA7A0025A6B5 /* Anchor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Anchor.hpp; sourceTree = "<group>"; };
 		B19831F020F6ED150025A6B5 /* Size.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Size.hpp; sourceTree = "<group>"; };
 		B1B6316320F01685005D5021 /* EvaluationGameField.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EvaluationGameField.cpp; sourceTree = "<group>"; };
 		B1B6316420F01685005D5021 /* EvaluationGameField.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EvaluationGameField.hpp; sourceTree = "<group>"; };
+		B1C8F38320F72D32002E7B14 /* Anchor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Anchor.hpp; path = tetris/core/generals/ui/components/Anchor.hpp; sourceTree = SOURCE_ROOT; };
+		B1C8F38420F72D32002E7B14 /* UILabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UILabel.cpp; path = tetris/core/generals/ui/components/UILabel.cpp; sourceTree = SOURCE_ROOT; };
+		B1C8F38520F72D32002E7B14 /* UIButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = UIButton.hpp; path = tetris/core/generals/ui/components/UIButton.hpp; sourceTree = SOURCE_ROOT; };
+		B1C8F38620F72D33002E7B14 /* UIView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UIView.cpp; path = tetris/core/generals/ui/components/UIView.cpp; sourceTree = SOURCE_ROOT; };
+		B1C8F38720F72D33002E7B14 /* UIView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = UIView.hpp; path = tetris/core/generals/ui/components/UIView.hpp; sourceTree = SOURCE_ROOT; };
+		B1C8F38820F72D33002E7B14 /* UIBaseView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = UIBaseView.hpp; path = tetris/core/generals/ui/components/UIBaseView.hpp; sourceTree = SOURCE_ROOT; };
+		B1C8F38920F72D33002E7B14 /* UIBaseView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UIBaseView.cpp; path = tetris/core/generals/ui/components/UIBaseView.cpp; sourceTree = SOURCE_ROOT; };
+		B1C8F38A20F72D33002E7B14 /* UILabel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = UILabel.hpp; path = tetris/core/generals/ui/components/UILabel.hpp; sourceTree = SOURCE_ROOT; };
+		B1C8F38B20F72D34002E7B14 /* UIComponent.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = UIComponent.hpp; path = tetris/core/generals/ui/components/UIComponent.hpp; sourceTree = SOURCE_ROOT; };
+		B1C8F38C20F72D34002E7B14 /* UIComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UIComponent.cpp; path = tetris/core/generals/ui/components/UIComponent.cpp; sourceTree = SOURCE_ROOT; };
+		B1C8F38D20F72D34002E7B14 /* UIButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UIButton.cpp; path = tetris/core/generals/ui/components/UIButton.cpp; sourceTree = SOURCE_ROOT; };
+		B1C8F39320F72D45002E7B14 /* UIManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UIManager.cpp; path = tetris/core/generals/ui/UIManager.cpp; sourceTree = SOURCE_ROOT; };
+		B1C8F39420F72D46002E7B14 /* UIManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = UIManager.hpp; path = tetris/core/generals/ui/UIManager.hpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,17 +146,17 @@
 		B13BE55C20F4541A0058808E /* components */ = {
 			isa = PBXGroup;
 			children = (
-				B13BE56320F458040058808E /* UIComponent.cpp */,
-				B13BE56420F458040058808E /* UIComponent.hpp */,
-				B13BE56F20F4784E0058808E /* UIBaseView.cpp */,
-				B13BE57020F4784E0058808E /* UIBaseView.hpp */,
-				B13BE55D20F454300058808E /* UIButton.cpp */,
-				B13BE55E20F454300058808E /* UIButton.hpp */,
-				B13BE56A20F46C720058808E /* UIView.cpp */,
-				B13BE56B20F46C720058808E /* UIView.hpp */,
-				B13BE57220F4876C0058808E /* UILabel.cpp */,
-				B13BE57320F4876C0058808E /* UILabel.hpp */,
-				B19831ED20F6EA7A0025A6B5 /* Anchor.hpp */,
+				B1C8F38320F72D32002E7B14 /* Anchor.hpp */,
+				B1C8F38920F72D33002E7B14 /* UIBaseView.cpp */,
+				B1C8F38820F72D33002E7B14 /* UIBaseView.hpp */,
+				B1C8F38D20F72D34002E7B14 /* UIButton.cpp */,
+				B1C8F38520F72D32002E7B14 /* UIButton.hpp */,
+				B1C8F38C20F72D34002E7B14 /* UIComponent.cpp */,
+				B1C8F38B20F72D34002E7B14 /* UIComponent.hpp */,
+				B1C8F38420F72D32002E7B14 /* UILabel.cpp */,
+				B1C8F38A20F72D33002E7B14 /* UILabel.hpp */,
+				B1C8F38620F72D33002E7B14 /* UIView.cpp */,
+				B1C8F38720F72D33002E7B14 /* UIView.hpp */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -180,8 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				B13BE55C20F4541A0058808E /* components */,
-				B13BE56720F46BDA0058808E /* UIManager.cpp */,
-				B13BE56820F46BDA0058808E /* UIManager.hpp */,
+				B1C8F39320F72D45002E7B14 /* UIManager.cpp */,
+				B1C8F39420F72D46002E7B14 /* UIManager.hpp */,
 			);
 			name = ui;
 			path = "New Group";
@@ -384,36 +384,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				B13BE58720F559EF0058808E /* CompetitiveMode.cpp in Sources */,
+				B1C8F38F20F72D34002E7B14 /* UIView.cpp in Sources */,
 				B15CAE6C20EB35230032E81F /* Tile.cpp in Sources */,
 				B15CAE7E20EB4CC80032E81F /* Updater.cpp in Sources */,
 				B15CAE6020EB19A40032E81F /* Drawer.cpp in Sources */,
 				B1B6316520F01685005D5021 /* EvaluationGameField.cpp in Sources */,
 				B13BE56220F456150058808E /* TouchEvent.cpp in Sources */,
-				B13BE55F20F454300058808E /* UIButton.cpp in Sources */,
 				B13BE55B20F453BA0058808E /* UITitleScreen.cpp in Sources */,
 				B15CAE6620EB21380032E81F /* IOInterface.cpp in Sources */,
 				B116D58C20EF1D22003B6C0E /* PlayerAI.cpp in Sources */,
+				B1C8F39020F72D34002E7B14 /* UIBaseView.cpp in Sources */,
 				B15CAE8B20EC720C0032E81F /* UIFieldBackground.cpp in Sources */,
 				B15CAE4E20EB13E50032E81F /* Player.cpp in Sources */,
 				B15CAE4B20EB13D90032E81F /* GameField.cpp in Sources */,
 				B15CAE7B20EB4C240032E81F /* Updatable.cpp in Sources */,
 				B13BE57E20F54A660058808E /* GameMode.cpp in Sources */,
 				B15CAE5120EB13F30032E81F /* GameContext.cpp in Sources */,
-				B13BE56C20F46C720058808E /* UIView.cpp in Sources */,
 				B15CAE5420EB14AB0032E81F /* Drawable.cpp in Sources */,
 				B15CAE4720EB137A0032E81F /* opengl.cpp in Sources */,
 				B15CAE8620EBFC040032E81F /* Random.cpp in Sources */,
 				B15CAE3820EB12410032E81F /* main.cpp in Sources */,
 				B13BE58120F558720058808E /* SinglePlayMode.cpp in Sources */,
 				B13BE58420F559D60058808E /* AIDemoMode.cpp in Sources */,
-				B13BE57120F4784E0058808E /* UIBaseView.cpp in Sources */,
+				B1C8F39520F72D46002E7B14 /* UIManager.cpp in Sources */,
 				B15CAE8820EBFC880032E81F /* ColorDefinition.cpp in Sources */,
 				B15CAE6F20EB35F30032E81F /* Block.cpp in Sources */,
+				B1C8F38E20F72D34002E7B14 /* UILabel.cpp in Sources */,
 				B12CD44320F59F84007E8CCA /* UIGameOver.cpp in Sources */,
 				B13BE57920F494D40058808E /* UIGameMenuWindow.cpp in Sources */,
-				B13BE56520F458040058808E /* UIComponent.cpp in Sources */,
-				B13BE56920F46BDA0058808E /* UIManager.cpp in Sources */,
-				B13BE57420F4876C0058808E /* UILabel.cpp in Sources */,
+				B1C8F39220F72D34002E7B14 /* UIButton.cpp in Sources */,
+				B1C8F39120F72D34002E7B14 /* UIComponent.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

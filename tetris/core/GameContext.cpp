@@ -10,7 +10,6 @@
 
 #include "GameMode.hpp"
 
-#include "UIGameMenuWindow.hpp"
 #include "UIManager.hpp"
 #include "UITitleScreen.hpp"
 #include "Utils.hpp"

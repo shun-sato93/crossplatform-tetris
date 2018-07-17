@@ -12,10 +12,9 @@
 #include "Singleton.hpp"
 
 class GameMode;
-class Player;
 
 /**
- * This class holds variables that is used by entire game and the top level game objects such as Player.
+ * This class holds variables that is used by entire game and the top level game objects such as GameMode.
  * To start a game, call createPlayer() or createAIPlayer()
  * Singleton.
  */

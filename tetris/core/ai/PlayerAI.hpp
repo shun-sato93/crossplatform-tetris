@@ -16,7 +16,7 @@
 class EvaluationGameField;
 
 /**
- * Subclass of Player which represents AI.
+ * Player subclass which represents AI.
  */
 class PlayerAI: public Player  {
 public:

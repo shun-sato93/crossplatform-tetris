@@ -25,19 +25,14 @@ UIGameMenuWindow::~UIGameMenuWindow()
 void UIGameMenuWindow::setup() {
     GameContext::get().setPauseGame(true);
     
-    const int menuWindowWidth = 300;
-    const int menuWindowHeight = 300;
+    const Size menuWindowSize(300, 300);
     UIView* menuWindowView = new UIView(
-                                    menuWindowWidth,
-                                    menuWindowHeight,
+                                    menuWindowSize,
                                     Color::GREY);
     menuWindowView->setAnchor(Anchor::CENTER);
     
-    const int buttonWidth = 150;
-    const int buttonHeight = 50;
-    UIButton* resumeButton = new UIButton(
-                                           buttonWidth,
-                                           buttonHeight);
+    const Size buttonSize(150, 50);
+    UIButton* resumeButton = new UIButton(buttonSize);
     resumeButton->setCoordinates(vec2d(0, 50), Anchor::CENTER);
     resumeButton->setTitle("Resume");
     resumeButton->setBackgroundColor(Color::WHITE);
@@ -46,9 +41,7 @@ void UIGameMenuWindow::setup() {
         close();
     });
     
-    UIButton* backToTitleButton = new UIButton(
-                                               buttonWidth,
-                                               buttonHeight);
+    UIButton* backToTitleButton = new UIButton(buttonSize);
     backToTitleButton->setCoordinates(vec2d(0, -50), Anchor::CENTER);
     backToTitleButton->setTitle("Back to Title");
     backToTitleButton->setBackgroundColor(Color::WHITE);
