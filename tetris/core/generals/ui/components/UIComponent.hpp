@@ -17,13 +17,16 @@
 #include "Drawable.hpp"
 #include "Vector2d.hpp"
 #include "Size.hpp"
-//#include "TouchEvent.hpp"
 
 class TouchEvent;
 
+/**
+ * Base class of every UI related class.
+ * It's based on parent-child relationship inspired by Apple's UIKit.
+ */
 class UIComponent: public Drawable {
 public:
-    UIComponent(int width, int height);
+    UIComponent(const Size& size);
     virtual ~UIComponent();
     
     virtual void draw() const override;

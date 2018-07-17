@@ -10,8 +10,8 @@
 
 #include "IOInterface.hpp"
 
-UIButton::UIButton(int width, int height)
-:UIComponent(width, height)
+UIButton::UIButton(const Size& size)
+:UIComponent(size)
 ,titleColor(Color::BLACK)
 {
     className = "UIButton";

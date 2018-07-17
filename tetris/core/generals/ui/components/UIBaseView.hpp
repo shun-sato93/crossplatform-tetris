@@ -13,6 +13,11 @@
 
 #include "UIView.hpp"
 
+
+/**
+ * Base layer class.
+ * 
+ */
 class UIBaseView: public UIView {
 public:
     UIBaseView(int zIndex);

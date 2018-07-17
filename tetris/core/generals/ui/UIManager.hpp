@@ -18,6 +18,9 @@ class UIComponent;
 class TouchEvent;
 class UIBaseView;
 
+/**
+ *
+ */
 class UIManager: Updatable, public Singleton<UIManager> {
 public:
     ~UIManager();

@@ -19,7 +19,7 @@ class TouchEvent;
 class UILabel: public UIComponent {
 public:
     UILabel(const std::string& text, Color::Types textColor);
-    UILabel(const std::string& text, Color::Types textColor, int width, int height);
+    UILabel(const std::string& text, Color::Types textColor, const Size& size);
     ~UILabel();
     
     void draw() const override;

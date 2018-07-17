@@ -9,9 +9,10 @@
 #include "UIView.hpp"
 
 #include "IOInterface.hpp"
+#include "Size.hpp"
 
-UIView::UIView(int width, int height, Color::Types color)
-:UIComponent(width, height)
+UIView::UIView(const Size& size, Color::Types color)
+:UIComponent(size)
 ,color(color)
 {
     className = "UIView";

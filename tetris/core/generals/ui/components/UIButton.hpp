@@ -13,11 +13,12 @@
 #include <string>
 
 #include "ColorDefinition.hpp"
+#include "Size.hpp"
 #include "UIComponent.hpp"
 
 class UIButton: public UIComponent {
 public:
-    UIButton(int width, int height);
+    UIButton(const Size& size);
     ~UIButton();
     
     void draw() const override;

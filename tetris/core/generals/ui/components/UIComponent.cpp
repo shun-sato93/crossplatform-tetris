@@ -13,9 +13,9 @@
 #include "Utils.hpp"
 #include "TouchEvent.hpp"
 
-UIComponent::UIComponent(int width, int height)
+UIComponent::UIComponent(const Size& size)
 :coordinates(0, 0)
-,size(width, height)
+,size(size)
 ,parent(nullptr)
 ,backgroundColor(Color::NONE)
 ,anchor(Anchor::LOWER_LEFT)
@@ -101,7 +101,6 @@ void UIComponent::addChild(UIComponent* child) {
 }
 
 void UIComponent::removeChild(UIComponent* child) {
-    std::cout << "UIComponent::removeChild" << std::endl;
     children.erase(remove(children.begin(), children.end(), child), children.end());
     child->setParent(nullptr);
 }

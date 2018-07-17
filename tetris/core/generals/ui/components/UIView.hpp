@@ -12,9 +12,11 @@
 #include "UIComponent.hpp"
 #include "ColorDefinition.hpp"
 
+class Size;
+
 class UIView: public UIComponent {
 public:
-    UIView(int width, int height, Color::Types color);
+    UIView(const Size& size, Color::Types color);
     ~UIView();
     
     void draw() const override;

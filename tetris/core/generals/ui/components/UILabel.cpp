@@ -11,22 +11,21 @@
 #include "IOInterface.hpp"
 
 UILabel::UILabel(const std::string& text, Color::Types textColor)
-:UIComponent(0, 0)
+:UIComponent(Size())
 ,text(text)
 ,textColor(textColor) {
     className = "UILabel " + text;
     sizeToFitText();
 }
 
-UILabel::UILabel(const std::string& text, Color::Types textColor, int width, int height)
-:UIComponent(width, height)
+UILabel::UILabel(const std::string& text, Color::Types textColor, const Size& size)
+:UIComponent(size)
 ,text(text)
 ,textColor(textColor) {
     className = "UILabel " + text;
 }
 
 UILabel::~UILabel() {
-    
 }
 
 void UILabel::draw() const {

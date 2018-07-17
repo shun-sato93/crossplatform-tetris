@@ -8,12 +8,10 @@
 
 #include "UIBaseView.hpp"
 
-#include <iostream>
-
 #include "Coordinates.hpp"
 
 UIBaseView::UIBaseView(int zIndex)
-:UIView(getWindowSize().x, getWindowSize().y, Color::NONE)
+:UIView(getWindowSize(), Color::NONE)
 ,_isClosed(false)
 ,callbackClosed(nullptr)
 {
@@ -31,10 +29,7 @@ bool UIBaseView::handleTouchEvent(const TouchEvent& touchEvent) {
         return false;
     }
     
-    std::cout << "UIBaseView::handleTouchEvent start " << getClassName() << " " << children.size() << std::endl;
     for (auto it=children.begin(); it!=children.end(); ++it) {
-        std::cout << "UIBaseView::handleTouchEvent middle " << getClassName() << " " << children.size() << std::endl;
-        std::cout << "UIBaseView::handleTouchEvent middle " << (*it)->getClassName() << std::endl;
         if ((*it)->handleTouchEvent(touchEvent)) {
             return true;
         }
@@ -59,6 +54,5 @@ bool UIBaseView::isClosed() const {
 }
 
 void UIBaseView::addChild(UIComponent* child) {
-    std::cout << "UIBaseView::addChild " << child->getClassName() << std::endl;
     UIComponent::addChild(child);
 }
