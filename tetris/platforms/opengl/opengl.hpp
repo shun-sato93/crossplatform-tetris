@@ -27,10 +27,10 @@ namespace OpenGL {
     void reshape(int width, int height);
     
     void drawRectangle(Color::Types color, double x1, double y1, double x2, double y2);
-    void drawText(double x, double y, std::string text, Color::Types color);
+    void drawText(double x, double y, const std::string& text, Color::Types color);
     void setColor(Color::Types color);
     
-    Size getTextSize(std::string text, int font);
+    Size getTextSize(const std::string& text, int font);
 }
 
 #endif /* opengl_hpp */

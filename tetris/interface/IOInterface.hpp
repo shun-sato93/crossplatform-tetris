@@ -34,7 +34,7 @@ public:
     /**
      * draw a text at specified coordinates with specified color.
      */
-    void drawText(double x, double y, std::string text, Color::Types color) const;
+    void drawText(double x, double y, const std::string& text, Color::Types color) const;
     
     /**
      * handles keyboard events. This should be called from platform dependent input delegates.

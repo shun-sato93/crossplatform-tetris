@@ -164,7 +164,7 @@ void OpenGL::drawRectangle(Color::Types color, double x1, double y1, double x2, 
     glRectd(x1, y1, x2, y2);
 }
 
-void OpenGL::drawText(double x, double y, string text, Color::Types color) {
+void OpenGL::drawText(double x, double y, const string& text, Color::Types color) {
     //(x,y) is from the bottom left of the window
     setColor(color);
     glRasterPos2d(x,y);
@@ -173,8 +173,8 @@ void OpenGL::drawText(double x, double y, string text, Color::Types color) {
     }
 }
 
-Size OpenGL::getTextSize(std::string text, int font) {
-    // FIXME font size
+Size OpenGL::getTextSize(const std::string& text, int font) {
+    // TODO: font size
     return Size(9*text.length(), 15);
 }
 

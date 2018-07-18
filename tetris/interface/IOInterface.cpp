@@ -25,7 +25,7 @@ void IOInterface::drawRectangle(double x1, double y1, double width, double heigh
     OpenGL::drawRectangle(color, x1, y1, x1+width, y1+height);
 }
 
-void IOInterface::drawText(double x, double y, std::string text, Color::Types color) const {
+void IOInterface::drawText(double x, double y, const std::string& text, Color::Types color) const {
     OpenGL::drawText(x, y, text, color);
 }
 
