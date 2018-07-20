@@ -8,6 +8,7 @@
 
 #include "UIComponent.hpp"
 
+#include <algorithm>
 #include <iostream>
 
 #include "Utils.hpp"

@@ -8,6 +8,8 @@
 
 #include "Updater.hpp"
 
+#include <algorithm>
+
 #include "Updatable.hpp"
 
 

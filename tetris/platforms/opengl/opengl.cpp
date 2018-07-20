@@ -8,8 +8,14 @@
 
 #include "opengl.hpp"
 
-#include <GLUT/glut.h>
-#include <unistd.h>
+#ifdef _WIN32
+	#include <gl/glut.h>
+	#include "unistd.h"
+#else
+	#include <GLUT/glut.h>
+	#include <unistd.h>
+#endif
+
 
 #include "Constants.hpp"
 #include "Coordinates.hpp"

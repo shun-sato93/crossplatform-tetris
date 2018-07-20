@@ -9,11 +9,19 @@
 #ifndef Utils_hpp
 #define Utils_hpp
 
+#ifdef _WIN32
+
+#include <windows.h>
+
+#else
+
 #include <mach/mach.h>
 #include <mach/clock.h>
-#include <vector>
 static clock_serv_t clk;
 static bool clk_initialized = false;
+
+#endif
+
 
 /**
  * Utils.hpp defines utility functions that are used from entire project.
@@ -32,17 +40,22 @@ static inline void SafeDelete( T*& p ){
  * @return current time in miliscond.
  */
 static inline double now_ms() {
-    // TODO: cross-platform time function
-    if( !clk_initialized ) {
-        host_get_clock_service( mach_host_self(), CALENDAR_CLOCK, &clk );
-        clk_initialized = true;
-    }
-    
-    mach_timespec_t res;
-    
-    clock_get_time( clk, &res );
-    
-    return (1000.0 * res.tv_sec) + (0.000001 * res.tv_nsec);
+	#ifdef _WIN32
+		SYSTEMTIME time;
+		GetSystemTime(&time);
+		return (time.wSecond * 1000) + time.wMilliseconds;
+	#else
+		if (!clk_initialized) {
+			host_get_clock_service(mach_host_self(), CALENDAR_CLOCK, &clk);
+			clk_initialized = true;
+		}
+
+		mach_timespec_t res;
+
+		clock_get_time(clk, &res);
+
+		return (1000.0 * res.tv_sec) + (0.000001 * res.tv_nsec);
+	#endif
 }
 
 #endif /* Utils_hpp */
