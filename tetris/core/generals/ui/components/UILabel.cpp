@@ -30,10 +30,10 @@ UILabel::~UILabel() {
 
 void UILabel::draw() const {
     const vec2d absoluteCoordinates = getAbsoluteCoordinates();
-    IOInterface::get().drawRectangle(absoluteCoordinates.x, absoluteCoordinates.y, size.width, size.height, backgroundColor);
+    IOInterface::drawRectangle(absoluteCoordinates.x, absoluteCoordinates.y, size.width, size.height, backgroundColor);
     
-    Size textSize = IOInterface::get().getTextSize(text, 0);
-    IOInterface::get().drawText(absoluteCoordinates.x + (size.width - textSize.width) / 2, absoluteCoordinates.y + (size.height - textSize.height) / 2, text, textColor);
+    Size textSize = IOInterface::getTextSize(text, 0);
+    IOInterface::drawText(absoluteCoordinates.x + (size.width - textSize.width) / 2, absoluteCoordinates.y + (size.height - textSize.height) / 2, text, textColor);
 }
 
 void UILabel::setText(const std::string& text) {
@@ -45,5 +45,5 @@ void UILabel::setTextColor(Color::Types color) {
 }
 
 void UILabel::sizeToFitText() {
-    size = IOInterface::get().getTextSize(text, 0);
+    size = IOInterface::getTextSize(text, 0);
 }

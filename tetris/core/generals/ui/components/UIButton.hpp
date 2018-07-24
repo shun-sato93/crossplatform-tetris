@@ -16,6 +16,9 @@
 #include "Size.hpp"
 #include "UIComponent.hpp"
 
+/**
+ * Button class that can be set touch event.
+ */
 class UIButton: public UIComponent {
 public:
     UIButton(const Size& size);

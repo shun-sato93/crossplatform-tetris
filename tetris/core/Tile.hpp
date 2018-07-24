@@ -16,6 +16,9 @@
 class Drawable;
 class GameField;
 
+/**
+ * Tile class. A GameField is consists of tiles.
+ */
 class Tile: Drawable {
 public:
     enum TileStatus {

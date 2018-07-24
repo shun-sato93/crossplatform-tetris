@@ -11,6 +11,7 @@
 #include "GameField.hpp"
 #include "EvaluationGameField.hpp"
 #include "Utils.hpp"
+#include "Time.hpp"
 
 using namespace std;
 
@@ -18,7 +19,7 @@ using namespace std;
 const int OPERATION_SPEED = 1;
 
 PlayerAI::PlayerAI()
-:lastBlockOperationMS(now_ms())
+:lastBlockOperationMS(Time::now_ms())
 ,evaluationGameField(new EvaluationGameField())
 {
     gameField->setCallbackNewBlockAdded([=] () {
@@ -33,7 +34,8 @@ PlayerAI::~PlayerAI() {
 }
 
 void PlayerAI::update() {
-    if (!operationQueue.empty() && now_ms() - lastBlockOperationMS > OPERATION_SPEED) {
+    double currentMS = Time::now_ms();
+    if (!operationQueue.empty() && currentMS - lastBlockOperationMS > OPERATION_SPEED) {
         auto nextOperation = operationQueue.back();
         switch(nextOperation) {
             case ROTATE:
@@ -50,7 +52,7 @@ void PlayerAI::update() {
                 break;
         }
         operationQueue.pop_back();
-        lastBlockOperationMS = now_ms();
+        lastBlockOperationMS = currentMS;
     }
 }
 

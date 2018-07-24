@@ -17,4 +17,5 @@ This is a submission for COMSC-165-5039 @ Diablo Valley College.
 If Xcode is installed on your pc, it works without any special operations.
 
 ### Windows
-WIP
+Precondition: Visual Studio is installed.
+Open visualstudio/tetris.sln and you should be able to build it without any other operations.(Confirmed with Visual Studio 2015). 

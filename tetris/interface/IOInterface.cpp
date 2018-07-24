@@ -13,33 +13,25 @@
 #include "GameMode.hpp"
 #include "opengl.hpp"
 
-IOInterface::IOInterface() {
-    
-}
-
-IOInterface::~IOInterface() {
-    
-}
-
-void IOInterface::drawRectangle(double x1, double y1, double width, double height, Color::Types color) const {
+void IOInterface::drawRectangle(double x1, double y1, double width, double height, Color::Types color) {
     OpenGL::drawRectangle(color, x1, y1, x1+width, y1+height);
 }
 
-void IOInterface::drawText(double x, double y, const std::string& text, Color::Types color) const {
+void IOInterface::drawText(double x, double y, const std::string& text, Color::Types color) {
     OpenGL::drawText(x, y, text, color);
 }
 
-void IOInterface::keyboardInput(Keyboard::Types input) const {
+void IOInterface::keyboardInput(Keyboard::Types input) {
     auto gameMode = GameContext::get().getGameMode();
     if (gameMode != nullptr) {
         gameMode->handleKeyboardInput(input);
     }
 }
 
-void IOInterface::changeWindowSize(int width, int height) const {
+void IOInterface::changeWindowSize(int width, int height) {
     OpenGL::changeWindowSize(width, height);
 }
 
-Size IOInterface::getTextSize(const std::string& text, int font) const {
+Size IOInterface::getTextSize(const std::string& text, int font) {
     return OpenGL::getTextSize(text, font);
 }

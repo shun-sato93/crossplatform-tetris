@@ -11,6 +11,10 @@
 
 #include "Vector2d.hpp"
 
+/**
+ * TouchEvent class
+ * A touch event should be passed down as this class.
+ */
 class TouchEvent {
 public:
     enum EventType {

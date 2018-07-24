@@ -55,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B105BE0521025E2900959B1A /* Time.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Time.hpp; sourceTree = "<group>"; };
 		B116D58B20EF1D22003B6C0E /* PlayerAI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerAI.cpp; sourceTree = "<group>"; };
 		B12CD44120F59F84007E8CCA /* UIGameOver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIGameOver.cpp; sourceTree = "<group>"; };
 		B12CD44220F59F84007E8CCA /* UIGameOver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UIGameOver.hpp; sourceTree = "<group>"; };
@@ -254,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				B15CAE4420EB13570032E81F /* opengl */,
+				B105BE0521025E2900959B1A /* Time.hpp */,
 			);
 			path = platforms;
 			sourceTree = "<group>";

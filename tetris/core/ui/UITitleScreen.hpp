@@ -11,6 +11,9 @@
 
 #include "UIBaseView.hpp"
 
+/**
+ * Title screen.
+ */
 class UITitleScreen: public UIBaseView {
 public:
     UITitleScreen();
