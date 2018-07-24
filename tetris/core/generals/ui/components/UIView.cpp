@@ -26,5 +26,5 @@ void UIView::draw() const {
         return;
     }
     const vec2d absoluteCoordinates = getAbsoluteCoordinates();
-    IOInterface::get().drawRectangle(absoluteCoordinates.x, absoluteCoordinates.y, size.width, size.height, color);
+    IOInterface::drawRectangle(absoluteCoordinates.x, absoluteCoordinates.y, size.width, size.height, color);
 }

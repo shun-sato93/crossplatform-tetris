@@ -9,6 +9,9 @@
 #ifndef Size_hpp
 #define Size_hpp
 
+/**
+ * Simple 2 dimentional size definition of everything.
+ */
 struct Size {
     Size(int width, int height)
     :width(width)

@@ -20,6 +20,9 @@
 class Tile;
 class Block;
 
+/**
+ * GameField class which represents a tetris board. Consists of tiles and a falling block.
+ */
 class GameField: Drawable, public Updatable {
 public:
     GameField();

@@ -8,10 +8,11 @@
 
 #include "ColorDefinition.hpp"
 
-#include "Utils.hpp"
 #include "Random.hpp"
+#include "Utils.hpp"
+#include "Time.hpp"
 
 Color::Types Color::getRandomColor() {
-    static auto rand = Random(now_ms());
+    static auto rand = Random(Time::now_ms());
     return static_cast<Types>(rand.getInt() % 4 + 1);
 }

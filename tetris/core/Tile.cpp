@@ -41,7 +41,7 @@ void Tile::draw() const {
     vec2d point = tileToPoint(coordinates);
     const vec2d& originCoordinates = gameField->getOriginCoordinates();
     point += originCoordinates;
-    IOInterface::get().drawRectangle(
+    IOInterface::drawRectangle(
                                      point.x,
                                      point.y,
                                      TILE_SIZE,

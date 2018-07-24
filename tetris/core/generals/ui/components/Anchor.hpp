@@ -9,6 +9,10 @@
 #ifndef Anchor_hpp
 #define Anchor_hpp
 
+/**
+ * Anchor definition to efficiently place UIComponents.
+ */
+
 namespace Anchor {
     enum Types {
         UPPER_CENTER = 0,

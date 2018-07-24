@@ -11,6 +11,9 @@
 
 #include "UIBaseView.hpp"
 
+/**
+ * Menu window a user can open during a game.
+ */
 class UIGameMenuWindow: public UIBaseView {
 public:
     UIGameMenuWindow();

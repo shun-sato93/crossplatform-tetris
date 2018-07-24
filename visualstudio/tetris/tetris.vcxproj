@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\tetris\core\ai\EvaluationGameField.cpp" />
+    <ClCompile Include="..\..\tetris\core\ai\PlayerAI.cpp" />
+    <ClCompile Include="..\..\tetris\core\Block.cpp" />
+    <ClCompile Include="..\..\tetris\core\GameContext.cpp" />
+    <ClCompile Include="..\..\tetris\core\GameField.cpp" />
+    <ClCompile Include="..\..\tetris\core\gameModes\AIDemoMode.cpp" />
+    <ClCompile Include="..\..\tetris\core\gameModes\CompetitiveMode.cpp" />
+    <ClCompile Include="..\..\tetris\core\gameModes\GameMode.cpp" />
+    <ClCompile Include="..\..\tetris\core\gameModes\SinglePlayMode.cpp" />
+    <ClCompile Include="..\..\tetris\core\generals\ColorDefinition.cpp" />
+    <ClCompile Include="..\..\tetris\core\generals\Drawable.cpp" />
+    <ClCompile Include="..\..\tetris\core\generals\Drawer.cpp" />
+    <ClCompile Include="..\..\tetris\core\generals\Random.cpp" />
+    <ClCompile Include="..\..\tetris\core\generals\TouchEvent.cpp" />
+    <ClCompile Include="..\..\tetris\core\generals\ui\components\UIBaseView.cpp" />
+    <ClCompile Include="..\..\tetris\core\generals\ui\components\UIButton.cpp" />
+    <ClCompile Include="..\..\tetris\core\generals\ui\components\UIComponent.cpp" />
+    <ClCompile Include="..\..\tetris\core\generals\ui\components\UILabel.cpp" />
+    <ClCompile Include="..\..\tetris\core\generals\ui\components\UIView.cpp" />
+    <ClCompile Include="..\..\tetris\core\generals\ui\UIManager.cpp" />
+    <ClCompile Include="..\..\tetris\core\generals\Updatable.cpp" />
+    <ClCompile Include="..\..\tetris\core\generals\Updater.cpp" />
+    <ClCompile Include="..\..\tetris\core\Player.cpp" />
+    <ClCompile Include="..\..\tetris\core\Tile.cpp" />
+    <ClCompile Include="..\..\tetris\core\ui\UIFieldBackground.cpp" />
+    <ClCompile Include="..\..\tetris\core\ui\UIGameMenuWindow.cpp" />
+    <ClCompile Include="..\..\tetris\core\ui\UIGameOver.cpp" />
+    <ClCompile Include="..\..\tetris\core\ui\UITitleScreen.cpp" />
+    <ClCompile Include="..\..\tetris\interface\IOInterface.cpp" />
+    <ClCompile Include="..\..\tetris\main.cpp" />
+    <ClCompile Include="..\..\tetris\platforms\opengl\opengl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\tetris\core\ai\EvaluationGameField.hpp" />
+    <ClInclude Include="..\..\tetris\core\ai\PlayerAI.hpp" />
+    <ClInclude Include="..\..\tetris\core\Block.hpp" />
+    <ClInclude Include="..\..\tetris\core\Constants.hpp" />
+    <ClInclude Include="..\..\tetris\core\GameContext.hpp" />
+    <ClInclude Include="..\..\tetris\core\GameField.hpp" />
+    <ClInclude Include="..\..\tetris\core\gameModes\AIDemoMode.hpp" />
+    <ClInclude Include="..\..\tetris\core\gameModes\CompetitiveMode.hpp" />
+    <ClInclude Include="..\..\tetris\core\gameModes\GameMode.hpp" />
+    <ClInclude Include="..\..\tetris\core\gameModes\SinglePlayMode.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\ColorDefinition.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\Coordinates.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\Drawable.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\Drawer.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\Hookable.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\Keyboard.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\Random.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\Singleton.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\Size.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\TouchEvent.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\ui\components\Anchor.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\ui\components\UIBaseView.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\ui\components\UIButton.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\ui\components\UIComponent.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\ui\components\UILabel.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\ui\components\UIView.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\ui\UIManager.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\unistd.h" />
+    <ClInclude Include="..\..\tetris\core\generals\Updatable.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\Updater.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\Utils.hpp" />
+    <ClInclude Include="..\..\tetris\core\generals\Vector2d.hpp" />
+    <ClInclude Include="..\..\tetris\core\Player.hpp" />
+    <ClInclude Include="..\..\tetris\core\Tile.hpp" />
+    <ClInclude Include="..\..\tetris\core\ui\UIFieldBackground.hpp" />
+    <ClInclude Include="..\..\tetris\core\ui\UIGameMenuWindow.hpp" />
+    <ClInclude Include="..\..\tetris\core\ui\UIGameOver.hpp" />
+    <ClInclude Include="..\..\tetris\core\ui\UITitleScreen.hpp" />
+    <ClInclude Include="..\..\tetris\interface\IOInterface.hpp" />
+    <ClInclude Include="..\..\tetris\platforms\opengl\opengl.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51B7E29B-470C-483D-B6B3-E235EAA67D14}</ProjectGuid>
+    <RootNamespace>tetris</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)tetris\@IncludePaths.txt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>@IncludePaths.txt %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets" Condition="Exists('..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets')" />
+    <Import Project="..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets" Condition="Exists('..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets'))" />
+  </Target>
+</Project>

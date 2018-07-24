@@ -8,8 +8,13 @@
 
 #include "opengl.hpp"
 
-#include <GLUT/glut.h>
-#include <unistd.h>
+#ifdef _WIN32
+	#include <gl/glut.h>
+	#include "unistd.h"
+#else
+	#include <GLUT/glut.h>
+	#include <unistd.h>
+#endif
 
 #include "Constants.hpp"
 #include "Coordinates.hpp"
@@ -79,10 +84,10 @@ void OpenGL::keyboardInput(unsigned char key, int x, int y) {
     cout << key << endl;
     switch (key) {
         case ' ': // Space key
-            IOInterface::get().keyboardInput(Keyboard::SPACE);
+            IOInterface::keyboardInput(Keyboard::SPACE);
             break;
         case 27: // ESC key
-            IOInterface::get().keyboardInput(Keyboard::ESC);
+            IOInterface::keyboardInput(Keyboard::ESC);
             break;
     }
 }
@@ -90,16 +95,16 @@ void OpenGL::keyboardInput(unsigned char key, int x, int y) {
 void OpenGL::specialKeyboardInput(int key, int x, int y) {
     switch (key) {
         case GLUT_KEY_LEFT:
-            IOInterface::get().keyboardInput(Keyboard::LEFT);
+            IOInterface::keyboardInput(Keyboard::LEFT);
             break;
         case GLUT_KEY_UP:
-            IOInterface::get().keyboardInput(Keyboard::UP);
+            IOInterface::keyboardInput(Keyboard::UP);
             break;
         case GLUT_KEY_DOWN:
-            IOInterface::get().keyboardInput(Keyboard::DOWN);
+            IOInterface::keyboardInput(Keyboard::DOWN);
             break;
         case GLUT_KEY_RIGHT:
-            IOInterface::get().keyboardInput(Keyboard::RIGHT);
+            IOInterface::keyboardInput(Keyboard::RIGHT);
             break;
     }
 }

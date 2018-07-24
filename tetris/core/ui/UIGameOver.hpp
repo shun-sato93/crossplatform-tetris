@@ -13,6 +13,9 @@
 
 #include "UIBaseView.hpp"
 
+/**
+ * Game over window.
+ */
 class UIGameOver: public UIBaseView {
 public:
     UIGameOver(int score, std::function<void(void)> retryDelegate);

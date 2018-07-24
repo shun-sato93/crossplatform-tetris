@@ -19,7 +19,7 @@ class TouchEvent;
 class UIBaseView;
 
 /**
- *
+ * This class manages array of UIBaseViews which is a base view of a layer of ui.
  */
 class UIManager: Updatable, public Singleton<UIManager> {
 public:

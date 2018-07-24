@@ -24,7 +24,6 @@ public:
     void quit() override;
     void handleKeyboardInput(Keyboard::Types key) override;
 private:
-    
     Player* player;
     Player* aiPlayer;
 };

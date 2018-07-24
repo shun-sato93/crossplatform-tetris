@@ -8,6 +8,8 @@
 
 #include "Drawer.hpp"
 
+#include <algorithm>
+
 #include "Drawable.hpp"
 
 Drawer::Drawer()

@@ -16,7 +16,7 @@
 
 /**
  * Base layer class.
- * 
+ * When you create a layer of UI, this class will be a base of every small parts.
  */
 class UIBaseView: public UIView {
 public:

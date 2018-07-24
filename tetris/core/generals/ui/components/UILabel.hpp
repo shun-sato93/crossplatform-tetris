@@ -16,6 +16,9 @@
 
 class TouchEvent;
 
+/**
+ * Label class that draws text.
+ */
 class UILabel: public UIComponent {
 public:
     UILabel(const std::string& text, Color::Types textColor);

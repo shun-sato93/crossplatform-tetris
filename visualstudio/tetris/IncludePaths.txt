@@ -1,0 +1,13 @@
+/I "..\..\tetris\"
+
+/I "..\..\tetris\core"
+/I "..\..\tetris\core\ai"
+/I "..\..\tetris\core\gameModes"
+/I "..\..\tetris\core\generals"
+/I "..\..\tetris\core\generals\ui"
+/I "..\..\tetris\core\generals\ui\components"
+/I "..\..\tetris\core\ui"
+
+/I "..\..\tetris\interface"
+
+/I "..\..\tetris\platforms\opengl"

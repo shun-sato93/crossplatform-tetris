@@ -29,6 +29,7 @@ UIFieldBackground::~UIFieldBackground() {
 }
 
 void UIFieldBackground::setup() {
+    // set background color
     color = Color::WHITE;
     
     scoreLabel = new UILabel("SCORE: 0", Color::BLACK);

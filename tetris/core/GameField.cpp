@@ -18,13 +18,14 @@
 #include "IOInterface.hpp"
 #include "Utils.hpp"
 #include "Tile.hpp"
+#include "Time.hpp"
 
 using namespace std;
 
 GameField::GameField()
 :originCoordinates(0, 0)
 ,block(new Block(this))
-,lastBlockFallenMS(now_ms())
+,lastBlockFallenMS(Time::now_ms())
 {
     for (int i=0; i<FIELD_WIDTH; ++i) {
         for (int j=0; j<FIELD_HEIGHT; ++j) {
@@ -45,7 +46,7 @@ GameField::~GameField() {
 
 void GameField::draw() const {
     auto fieldSizeInPoint = getVisibleFieldSizeInPoint();
-    IOInterface::get().drawRectangle(
+    IOInterface::drawRectangle(
                                      originCoordinates.x,
                                      originCoordinates.y,
                                      fieldSizeInPoint.x,
@@ -54,14 +55,15 @@ void GameField::draw() const {
 }
 
 void GameField::update() {
-    if (block != nullptr && (now_ms() - lastBlockFallenMS > BLOCK_SPEED)) {
+    auto currentMS = Time::now_ms();
+    if (block != nullptr && (currentMS - lastBlockFallenMS > BLOCK_SPEED)) {
         if (isBlockMovableTo(block, vec2n(0, -1))) {
             block->moveBy(0, -1);
         } else {
             fixBlock();
             clearLines();
         }
-        lastBlockFallenMS = now_ms();
+        lastBlockFallenMS = currentMS;
     }
 }
 

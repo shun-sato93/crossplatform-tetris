@@ -24,7 +24,7 @@ CompetitiveMode::~CompetitiveMode() {
 }
 
 void CompetitiveMode::start() {
-    IOInterface::get().changeWindowSize(WINDOW_WIDTH_TWO_PLAYER, WINDOW_HEIGHT);
+    IOInterface::changeWindowSize(WINDOW_WIDTH_TWO_PLAYER, WINDOW_HEIGHT);
     player = new Player();
     aiPlayer = new PlayerAI();
     
@@ -42,7 +42,7 @@ void CompetitiveMode::pause(bool isPaused) {
 }
 
 void CompetitiveMode::quit() {
-    IOInterface::get().changeWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);
+    IOInterface::changeWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);
     SafeDelete(player);
     SafeDelete(aiPlayer);
 }

@@ -13,6 +13,9 @@
 
 class UILabel;
 
+/**
+ * Background UI during a game.
+ */
 class UIFieldBackground: public UIBaseView {
 public:
     UIFieldBackground();

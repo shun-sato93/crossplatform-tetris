@@ -14,6 +14,9 @@
 
 class Size;
 
+/**
+ * Plane ui view that simply draws its shape if the color is specified.
+ */
 class UIView: public UIComponent {
 public:
     UIView(const Size& size, Color::Types color);

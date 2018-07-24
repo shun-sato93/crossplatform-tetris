@@ -8,6 +8,7 @@
 
 #include "UIManager.hpp"
 
+#include <algorithm>
 #include <iostream>
 
 #include "Coordinates.hpp"

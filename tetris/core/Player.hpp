@@ -20,7 +20,7 @@ class GameField;
 class UIFieldBackground;
 
 /**
- *
+ * Player class have a game field and a background ui as its properties.
  */
 class Player: public Updatable {
 public:
