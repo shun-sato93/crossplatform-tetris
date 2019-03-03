@@ -5,10 +5,10 @@ This is cross-platform tetris with AI feature, 100% written in C++11.
 Using OpenGL as a graphic engine.
 
 
-![img1](https://i.imgur.com/NQI6zH8.png?1)
+![img1](https://i.imgur.com/HnA9jaT.png)
 
     
-![img2](https://i.imgur.com/mNicU3C.png?1)
+![img2](https://i.imgur.com/IXF75uI.png)
 
 ## Installation
 
